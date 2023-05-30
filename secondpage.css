@@ -1,0 +1,251 @@
+@font-face {
+    font-family: gotham;
+    src: url(/font/GothamMedium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gotham';
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #6D86EA, #DDE8FD, #FC9B99, #fca7a5);
+    animation: animat 10s ease-in-out infinite;
+    background-size: 300% 300%;
+    overflow-y: hidden;
+}
+@keyframes animat {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+main
+{
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px 0 80px;
+    align-items: center;
+}
+
+header h1 {
+    cursor: pointer;
+    color: #0B0754;
+}
+
+header li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+header li ul a {
+    text-decoration: none;
+    color: #0B0754;
+    font-weight: bold;
+    padding: 16px;
+}
+
+header li ul a:hover,
+.active {
+    color: white;
+    background-color: #0B0754;
+    border-radius: 100vh;
+}
+
+section
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 75%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+.containers
+{
+    box-shadow:0 3rem 6rem rgb(0,0,0,0.1);
+    position: relative;
+    cursor: pointer;
+    overflow-y: hidden;
+    width: 100%;
+    color: #0B0754;
+    background-color: white;
+    border-radius: 3vh;
+    padding: 40px;
+    transition: 0.2;
+}
+.containers:hover
+{
+    transform: translateY(-0.5%);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.178);
+
+}
+.pictures
+{
+    height: 30%;
+}
+
+.pic1
+{
+    background-position: center;
+    background-image: url(images/firee.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.pic2 {
+    background-image: url(images/motion.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pic3 {
+    margin: auto;
+    background-image: url(images/password.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section .containers h2, section .containers p
+{
+    padding: 16px;
+}
+
+section div p
+{
+    line-height: 20px;
+}
+
+section div h2
+{
+    margin-top: 12px;
+    color: rgb(2, 133, 247);
+    text-align: center;
+}
+section div a
+{
+    text-decoration: none;
+    background-color:  #0B0754;
+    border-radius: 2vh;
+    padding: 8px 16px 8px 16px;
+    color: white;
+    text-transform: uppercase;
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+section div a:hover
+{
+    text-decoration: underline;
+}
+canvas {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -10000;
+}
+.copyright {
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #0b0754a8;
+    font-size: 16px;
+}
+
+@media screen and (max-width : 1050px) {
+
+    html {
+            position: relative;
+            height: -webkit-fill-avaliable;
+            overflow-x: hidden;
+        }
+    
+        body {
+            position: relative;
+            height: 100dvh;
+            width: 100%;
+            overflow-x: hidden;
+        }
+    
+        main {
+            overflow-x: hidden;
+        }
+
+    section{
+        flex-direction: column;
+        width: 80%;
+        padding: 0;
+        height: fit-content;
+        margin:0;
+        margin-inline : auto;
+        padding-bottom: 40px;
+    }
+    .containers{
+        padding-bottom: 25%;
+        margin-inline: 2%;
+        height:fit-content ;
+        width: 100%;
+    }
+
+    .copyright {
+        font-size: 8px;
+        position: unset;
+        float: right;
+    }
+
+    #particles-js {
+        height: 100%;
+        width: 100%;
+    }
+    canvas{
+        height: 200%;
+    }
+
+    .active {
+        color: white;
+        background-color: none;
+        padding-block: 8px;
+    }
+
+    header li {
+        background-color: #0B0754;
+    }
+
+    header li ul a {
+        color: rgb(192, 190, 190);
+    }
+    main section div h2{
+        font-size: 24px;
+    }
+    main section div p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+        main section div a {
+            font-size: 12px;
+        }
+                main header h1,
+                main header div {
+                    font-size: 24px;
+                }
+}

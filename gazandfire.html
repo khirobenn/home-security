@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gazandfire.css">
+    <link rel="shortcut icon" type="x-icon" href="books.png">
+    <link rel="stylesheet" href="trans.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Détecteur de mouvement</title>
+</head>
+<body>
+    <main id="swup" class="transition-fade firstp">
+        <div id="particles-js">
+            <header>
+                <h1  onclick="returnHome()"><i class="ri-lock-fill"></i>kRDM</h1>
+                <li class="navbar">
+                    <ul><a href="/index.html">acceuil</a></ul>
+                    <ul><a href="/firstpage.html">à propos du projet</a></ul>
+                    <ul><a href="/secondpage.html" class="active">côté pratique</a></ul>
+                    <ul><a href="thirdpage.html">à propos de nous</a></ul>
+                </li>
+                <div id="menu" style="color: white;"><i class="ri-menu-line"></i></div>
+            </header>
+            <div class="arrow" onclick="linkreturn()" id="enter"><i class="ri-arrow-left-circle-fill"></i></div>
+            <h2>Détecteur de feu et de gaz</h2>
+            <div class="card">
+                <div><img src="images/composents/GazFire.png" alt=""></div>
+                <div class="cardLinks">
+                    <a class="simuler" href="https://www.tinkercad.com/things/3JBNhdKgCqG-copy-of-funky-leelo/editel?sharecode=Z6wnKQowqWuSfxCDjb3lsgdjTeX9ryz1UpfFMIT59WQ">simuler en ligne</a>
+                    <a class="compo" href="#composants">voir les composants</a>
+                </div>
+            </div>
+    
+            <h3 id="composants">composants</h3>
+            <section>
+                <div class="paragraphe">L'Arduino Uno est une carte de microcontrôleur populaire largement utilisée dans les projets d'électronique et de prototypage. Elle est basée sur le microcontrôleur ATmega328P d'Atmel et dispose d'un ensemble de broches d'entrée/sortie numériques et analogiques, ainsi que de diverses autres fonctionnalités.</div>
+                <div class="pictures"><img src="images/composents/ArduinoUno.svg" alt=""></div>
+                <hr>
+                <div class="pictures"><img src="images/composents/palette.png" alt=""></div>
+                <div class="paragraphe">Une plaque d'essai, également connue sous le nom de breadboard en anglais, est un outil couramment utilisé en électronique pour prototyper et expérimenter avec des circuits électroniques. Elle fournit un moyen pratique de connecter et de tester rapidement des composants électroniques sans nécessiter de soudure.</div>
+                <hr>
+                <div class="paragraphe">Un capteur de température est un dispositif électronique qui mesure et détecte les variations de température dans son environnement. Il est largement utilisé dans de nombreux domaines, tels que l'automatisation industrielle, le contrôle environnemental, les applications médicales, les systèmes de surveillance, etc.</div>
+                <div class="pictures"><img class="redui" src="images/composents/temp.png" alt=""></div>
+                <hr>
+                <div class="pictures"><img class="redui" src="images/composents/gazsensor.png" alt=""></div>
+                <div class="paragraphe">Un détecteur de gaz est un dispositif utilisé pour détecter la présence de gaz dans l'air ambiant. Il est utilisé dans de nombreux domaines pour des raisons de sécurité, de contrôle environnemental et de surveillance industrielle. Les détecteurs de gaz sont largement utilisés dans les bâtiments, les usines, les laboratoires, les espaces de travail et les environnements industriels.</div>
+                <hr>
+                <div class="paragraphe">La résistance est un composant passif couramment utilisé pour contrôler le courant électrique dans un circuit.</div>
+                <div class="pictures"><img class="redui" src="images/composents/resistance.png" alt=""></div>
+                <hr>
+                <div class="pictures"><img class="redui" src="images/composents/LED.png" alt=""></div>
+                <div class="paragraphe">Une LED (Light Emitting Diode) est un composant électronique qui émet de la lumière lorsqu'un courant électrique le traverse dans la direction correcte. Les LED sont largement utilisées dans de nombreux appareils et applications, notamment l'éclairage, les affichages, les indicateurs lumineux, les panneaux publicitaires, etc.</div>
+                <hr>
+                <div class="paragraphe">Un élément piézoélectrique, également connu sous le nom de transducteur piézoélectrique, est un composant électronique qui convertit l'énergie électrique en énergie mécanique (ou vice versa) grâce à l'effet piézoélectrique. Cet effet se produit dans certains matériaux qui peuvent générer une charge électrique en réponse à une contrainte mécanique, ou générer une déformation mécanique en réponse à un signal électrique.</div>
+                <div class="pictures"><img class="redui" src="images/composents/pie.png" alt=""></div>
+                <hr>
+            </section>
+            <div class="forvid">
+                <h4>Vidéo explicative de la construction du circuit avec le code.</h3>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/fwwI4R_97DI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+            <p class="copyright">&copy; 2023 Groupe kRDM. Tous droits réservés.</p>
+        </div>
+    </main>
+    <script src="https://unpkg.com/swup@3"></script>
+    <script src="bar.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="appp.js"></script>
+</body>
+</html>

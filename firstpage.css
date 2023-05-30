@@ -1,0 +1,175 @@
+@font-face {
+    font-family: gotham;
+    src: url(/font/GothamMedium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gotham;
+}
+
+body
+{
+    background-color: #0B0754;
+    z-index: -1000000000000;
+    position: relative;
+}
+main
+{
+    padding-bottom: 60px;
+}
+header,section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{padding: 20px 80px 0 80px;}
+
+header h1 {
+    cursor: pointer;
+    color: white;
+}
+
+header li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+header li ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+}
+
+header li ul a:hover,
+.active {
+    color: #0B0754;
+    background-color: white;
+    border-radius: 100vh;
+}
+section
+{
+    margin: 60px 120px 0 120px;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    padding: 80px;
+    border-radius: 2%;
+    color: #0B0754;
+    column-gap: 20px;
+    justify-items: center;
+    width: fit-content;
+    row-gap: 32px;
+}
+
+section img
+{
+    width: 75%;
+    height: auto;
+}
+
+section h2
+{
+    grid-column:span 2;
+    text-transform: uppercase;
+    border-bottom: 4px solid #0B0754;
+    padding-bottom: 16px;
+    justify-self: start;
+}
+.marg
+{
+    height: 60px;
+}
+section p
+{
+    line-height: 36px;
+}
+canvas
+{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #0B0754;
+    z-index: -10000;
+}
+.copyright {
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color:rgb(180, 180, 180);
+    font-size: 16px;
+}
+
+@media screen and (max-width : 1050px) {
+
+    .copyright {
+        font-size: 8px;
+    }
+
+    html{
+        height: -webkit-fill-avaliable;
+        overflow-x: hidden;
+    }
+    #particles-js {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    section{
+        margin: 0;
+        padding:0;
+        padding: 0% 10% 10% 10%;
+        border-radius: 2vh;
+        color: white;
+        background-color: transparent;
+
+    }
+    .active {
+        color: #3c33e8;
+        background-color: none;
+        padding-block: 8px;
+    }
+
+    section p , section img{
+        grid-column: span 2;
+    }
+    section img{
+        width: 50%;
+    }
+    section p{
+        font-size: 24px;
+        line-height: 36px;
+
+    }
+    section h2{
+        font-size: 24px;
+        border-bottom: 4px solid white;
+    }
+
+    header li {
+        background-color: white;
+    }
+
+    .item1{
+        display: none;
+    }
+
+    header li ul a {
+        color: #0B0754;
+    }
+    main{
+        overflow:hidden;
+        position: relative;
+    }
+    main header h1,main header div{
+        font-size: 24px;
+    }
+
+}

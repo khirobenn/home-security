@@ -1,0 +1,157 @@
+@font-face {
+    font-family: gotham;
+    src: url(/font/GothamMedium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gotham';   
+}
+body{
+    background-color: black;
+    overflow-y: hidden;
+}
+main
+{
+    height: fit-content;
+    height: 100vh;
+    position: absolute;
+    z-index: 10000; 
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px 0 80px;
+    align-items: center;
+}
+header h1
+{
+    cursor: pointer;
+    color: white;
+}
+header li
+{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+header li ul a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+}
+
+header li ul a:hover,.active
+{
+    color: black;
+    background-color: white;
+    border-radius: 100vh;
+}
+
+section
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px 0 80px;
+    align-items: center;
+    padding-top: 120px;
+    height: fit-content;
+}
+section img
+{
+    width: 40%;
+    height:auto;
+}
+
+section div{
+    gap: 16px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+
+}
+section div h2{
+    color: white;
+    font-size: 70px;
+}
+
+section div p
+{
+    line-height: 44px;
+    color: white;
+    font-size: 24px;
+
+}
+.copyright
+{
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+}
+
+@media screen and (max-width : 1050px) {
+    html {
+        height: -webkit-fill-avaliable;
+        overflow-x: hidden;
+    }
+    
+    body {
+        height: 100dvh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    main{
+        overflow-x: hidden;
+    }
+    section img{
+        display: block;
+        width: 100%;
+    }
+    #particles-js
+    {
+        height: 100vh;
+        width: auto;
+    }
+    section{
+        padding: 0;
+        flex-direction: column;
+    }
+    section div h2{
+        font-size: 36px;
+    }
+    section div p{
+        font-size: 20px;
+        line-height: 36px;
+    }
+        .copyright {
+            font-size: 8px;
+            position: unset;
+            float: right;
+        }
+    
+        .active {
+            color: blue;
+            background-color: none;
+            padding-block: 8px;
+        }
+    
+        header li {
+            background-color: white;
+        }
+    
+        header li ul a {
+            color: black;
+        }
+                main header h1,
+                main header div {
+                    font-size: 24px;
+                }
+}

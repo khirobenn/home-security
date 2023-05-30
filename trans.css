@@ -1,0 +1,101 @@
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.home,.firstp
+{
+    animation: transin 0.7s;
+}
+
+.forvid {
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    margin-inline: 5%;
+}
+
+.forvid h4 {
+    text-align: center;
+    color: white;
+    font-size: 44px;
+}
+
+@keyframes transin
+{
+    from{
+        opacity: 0;
+        transform: rotateX((-10deg));
+    }
+    to
+    {
+        opacity: 1;
+        transform: rotateX((0));   
+    }
+}
+
+.arrow {
+    position: relative;
+    height: 30px;
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 2%;
+    padding-top: 4%;
+    padding-left: 24px;
+}
+
+.arrow i {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: fit-content;
+}
+
+#composants
+{
+    font-size: 40px;
+}
+
+#menu
+{
+    text-decoration: none;
+    color: #0B0754;
+    display: none;
+}
+
+@media screen and (max-width : 1000px)
+{
+    #menu
+    {
+        display:block;
+    }
+    .navbar{
+        position: absolute;
+        top: 20px;
+        right: -4000px;
+        flex-direction: column;
+        font-size: 12px;
+        padding: 8px;
+        border-radius: 2vh;
+        padding-block: 16px;
+        z-index: 1000000000000;
+    }
+    .navbar.show
+    {
+        right: 40px;
+    }
+    header{
+        padding: 20px 20px 60px 20px;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
