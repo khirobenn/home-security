@@ -244,8 +244,7 @@ canvas {
         main section div a {
             font-size: 12px;
         }
-                main header h1,
-                main header div {
+                main header h1 {
                     font-size: 24px;
                 }
 }
